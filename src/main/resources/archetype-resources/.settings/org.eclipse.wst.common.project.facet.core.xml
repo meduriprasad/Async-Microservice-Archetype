@@ -1,0 +1,7 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="${version}" encoding="UTF-8"?>
+<faceted-project>
+  <installed facet="cloudfoundry.standalone.app" version="${version}"/>
+</faceted-project>
