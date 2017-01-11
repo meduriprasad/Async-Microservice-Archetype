@@ -5,29 +5,7 @@
   <groupId>com.prokarma</groupId>
   <artifactId>async-microservice-archetype</artifactId>
   <version>1.0</version>
-  <packaging>maven-archetype</packaging>
-
   <name>async-microservice-archetype</name>
-
-  <build>
-    <extensions>
-      <extension>
-        <groupId>org.apache.maven.archetype</groupId>
-        <artifactId>archetype-packaging</artifactId>
-        <version>2.4</version>
-      </extension>
-    </extensions>
-
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <artifactId>maven-archetype-plugin</artifactId>
-          <version>2.4</version>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-  </build>
-
 
   <description>async-microservice-archetype</description>
 </project>

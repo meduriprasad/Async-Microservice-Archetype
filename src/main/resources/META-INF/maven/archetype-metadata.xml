@@ -2,6 +2,35 @@
 <archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="backend-service"
     xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <requiredProperties>
+		<requiredProperty key="server-port">
+			<defaultValue>8081</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="zookeeper-host">
+			<defaultValue>localhost</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="zookeeper-port">
+			<defaultValue>2181</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="brokerList-host">
+			<defaultValue>localhost</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="brokerList-port">
+			<defaultValue>9092</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="postgres-host">
+			<defaultValue>localhost</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="postgres-port">
+			<defaultValue>5432</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="postgres-username">
+			<defaultValue>postgres</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="postgres-password">
+			<defaultValue>postgres</defaultValue>
+		</requiredProperty>
+	</requiredProperties>
   <fileSets>
     <fileSet filtered="true" packaged="true" encoding="UTF-8">
       <directory>src/main/java</directory>
