@@ -6,6 +6,18 @@
 		<requiredProperty key="server-port">
 			<defaultValue>8081</defaultValue>
 		</requiredProperty>
+		<requiredProperty key="spring-admin-host">
+			<defaultValue>localhost</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="spring-admin-port">
+			<defaultValue>8088</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="eureka-host">
+			<defaultValue>localhost</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="eureka-port">
+			<defaultValue>8761</defaultValue>
+		</requiredProperty>
 		<requiredProperty key="zookeeper-host">
 			<defaultValue>localhost</defaultValue>
 		</requiredProperty>
