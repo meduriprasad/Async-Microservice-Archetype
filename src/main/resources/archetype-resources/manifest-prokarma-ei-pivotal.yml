@@ -1,0 +1,16 @@
+applications:
+- name: ${artifactId}
+  memory: 512M
+  instances: 1
+  host: ${artifactId}
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  path: target/${artifactId}.jar
+  env:
+    REGISTRY_SERVER_URL: pkmst-registry.apps.prokarma.com
+    KAFKA_URL: 
+    ZOOKEEPER__URL: 
+    SPRING_DATASOURCE_URL: jdbc:postgresql://localhost:5432/postgres
+    SPRING_DATASOURCE_USERNAME: postgres
+    SPRING_DATASOURCE_PASSWORD: prokarma
+    REGISTRY_SERVER_URL: 
+    SPRING_ADMIN_URL: 
