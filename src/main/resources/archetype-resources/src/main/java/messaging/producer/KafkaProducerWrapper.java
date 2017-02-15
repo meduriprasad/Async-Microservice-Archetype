@@ -12,7 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import com.example.broker.producer.BasicKafkaProducerWrapper;
+import ${package}.broker.producer.BasicKafkaProducerWrapper;
 
 @Component
 public class KafkaProducerWrapper extends BasicKafkaProducerWrapper {

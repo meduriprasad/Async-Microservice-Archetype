@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import com.example.broker.consumer.DefaultConcurrentConsumerService;
+import ${package}.broker.consumer.DefaultConcurrentConsumerService;
 import ${package}.messaging.producer.KafkaProducerWrapper;
 import ${package}.messaging.tasks.MiRequestTask;
 import ${package}.service.UserService;

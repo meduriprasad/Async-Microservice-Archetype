@@ -7,10 +7,9 @@ applications:
   path: target/${artifactId}.jar
   env:
     REGISTRY_SERVER_URL: pkmst-registry.apps.prokarma.com
-    KAFKA_URL: 
-    ZOOKEEPER__URL: 
-    SPRING_DATASOURCE_URL: jdbc:postgresql://localhost:5432/postgres
-    SPRING_DATASOURCE_USERNAME: postgres
-    SPRING_DATASOURCE_PASSWORD: prokarma
-    REGISTRY_SERVER_URL: 
-    SPRING_ADMIN_URL: 
+    KAFKA_URL: 172.16.86.144:9092
+    ZOOKEEPER__URL: 172.16.86.144:2181
+    SPRING_DATASOURCE_URL: jdbc:postgresql://172.16.86.144:5433/postgres
+    SPRING_DATASOURCE_USERNAME: devadmin
+    SPRING_DATASOURCE_PASSWORD: yorick567)(*
+    SPRING_ADMIN_URL: pkmst-spring-admin.apps.prokarma.com 

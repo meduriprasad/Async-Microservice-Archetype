@@ -16,12 +16,17 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
-		<docker.plugin.version>0.3.258</docker.plugin.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>log4j-over-slf4j</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
@@ -58,13 +63,6 @@
 			<groupId>org.apache.kafka</groupId>
 			<artifactId>kafka_2.10</artifactId>
 			<version>0.8.2.1</version>
-		</dependency>
-		<dependency>
-			<groupId>com.prokarma</groupId>
-			<artifactId>microservice-common</artifactId>
-			<version>0.9.2</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/microservice-common-1.0.jar</systemPath>
 		</dependency>
 	</dependencies>
 	<dependencyManagement>

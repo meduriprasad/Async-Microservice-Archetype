@@ -9,8 +9,8 @@ import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.example.messages.MiReply;
-import com.example.messages.MiRequest;
+import ${package}.messages.MiReply;
+import ${package}.messages.MiRequest;
 import ${package}.messaging.producer.KafkaProducerWrapper;
 import ${package}.model.MobileInternet;
 import ${package}.service.UserService;
